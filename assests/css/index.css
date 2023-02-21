@@ -24,8 +24,12 @@
     color:chartreuse;
 }
 
-.content-wrapper{
+.container{
     text-align: center;
+}
+
+.container-1{
+    margin-left: 3em
 }
 
 .btn{
