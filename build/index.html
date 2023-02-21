@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sanath's Portfolio</title>
     <link rel="stylesheet" href="assests/css/index.css">
+    <link rel="stylesheet" href="assests/css/header.css">
     <link rel="stylesheet" href="assests/css/bootstrap.min.css">
 </head>
 <body data-bs-spy="scroll" data-bs-target=".navbar">
@@ -21,7 +22,8 @@
               <a class="nav-link" aria-current="page" href="#home">Home</a>
               <a class="nav-link" href="#education">Education</a>
               <a class="nav-link" href="#work">Work</a>
-              <a class="nav-link" href="#skills">Skills</a>
+              <a class="nav-link" href="#publications">Publications</a>
+              <a class="nav-link" href="#projects">Projects</a>
               <a class="nav-link" href="#contact">Contact</a>
             </div>
           </div>
@@ -35,9 +37,9 @@
       <section id="home" class="full-height px-lg-5">
         <div class="container">
           <div class="row">
-            <h1>I'm a <bold class="home-h1">Software Engineer</bold> from Bangalore, India</h1>
-            <p> I'm Sanath, And I craft high-performing and delightful experiences tailored and conversion-focused</p>
-            <a href="#work" class="btn btn-default"> Explore My Work </a>
+            <h1 data-aos="fade-up" >I'm a <bold class="home-h1">Software Engineer</bold> from Bangalore, India</h1>
+            <p> Hi Sanath here, I'm a Computer Science Graduate, and I craft high-performing and delightful experiences which are tailored and conversion-focused.</p>
+            <a href="#work" class="link-custom"> Explore My Work </a>
             <a href="#" class="link-custom"> Call: +91 8885599909 </a>
           </div>
         </div>
@@ -45,41 +47,66 @@
       </section>
       <!-- /HOME -->
       <!-- Education -->
-      <section id="education" class="full-height px-lg-5">
-        <div class="container">
-          <div class="row">
-            <h1>I'm a <bold class="home-h1">Software Engineer</bold> from Bangalore, India</h1>
-            <p> I'm Sanath, And I craft high-performing and delightful experiences tailored and conversion-focused</p>
-            <a href="#work" class="btn btn-default"> Explore My Work </a>
-            <a href="#" class="link-custom"> Call: +91 8885599909 </a>
-          </div>
+      <section id="education" class="full-height">
+        <div class="container-1">
+            <h1 style="color: chartreuse"> EDUCATION </h1>
+            <h2> Amrita Vishwa Vidyapeetham</h2>
+            <p>2018 - 2022</p>
+            <p style="font-size:0.75em">Bachelor of Technology in Computer Science & Engineering.</p>
+            <p style="font-size:0.75em">Related Courses: Design and Analysis of Algorithms, Data Structures, Object-Oriented Programming, Operating Systems, Computer Architecture, Computer Networks.</p>
         </div>
       </section>
       <!-- /Education -->
       <!-- Work -->
       <section id="work" class="full-height px-lg-5">
-        <div class="container">
+        <div class="container-2">
           <div class="row">
-            <h1>I'm a <bold class="home-h1">Software Engineer</bold> from Bangalore, India</h1>
-            <p> I'm Sanath, And I craft high-performing and delightful experiences tailored and conversion-focused</p>
-            <a href="#work" class="btn btn-default"> Explore My Work </a>
-            <a href="#" class="link-custom"> Call: +91 8885599909 </a>
+            <h1 style="color: chartreuse; font-size: 3em;"> WORK </h1>
+            <div style="margin: auto;">
+              <h2 style="font-size: 1.75em;"><a href="https://odico.dk/en/"> Odico A/S </a></h2>
+              <p style="font: size 1.5em;"> Software Development Engineer - L1</p>
+              <p style="font: size 1.5em;"> August 2022 - October 2022</p>
+              <p>I redesigned the entire webpage(s) of maker.as (The URL where Odico as a Robotics comes into the picture), which required me to be open, and adaptive (in any role possible).</p>
+            </div>
+            <div>
+              <h2 style="font-size: 1.75em;"><a href="https://www.rakuten.com/"> Rakuten India </a></h2>
+              <p style="font: size 1.5em;"> Software Development Engineer Intern </p>
+              <p style="font: size 1.5em;"> January 2022 - July 2022</p>
+              <p>I developed an Interface (integrated with the back-end too) that can do seamless SQL operations with multi-threading. This particular project of mine helped various teams across Rakuten.</p>
+            </div>
           </div>
         </div>
       </section>
       <!-- /Work -->
-      <!-- Skills -->
-      <section id="skills" class="full-height px-lg-5">
-        <div class="container">
+      <!-- Publications -->
+      <section id="publications" class="full-height px-lg-5">
+        <div class="container-2">
           <div class="row">
-            <h1>I'm a <bold class="home-h1">Software Engineer</bold> from Bangalore, India</h1>
-            <p> I'm Sanath, And I craft high-performing and delightful experiences tailored and conversion-focused</p>
-            <a href="#work" class="btn btn-default"> Explore My Work </a>
-            <a href="#" class="link-custom"> Call: +91 8885599909 </a>
+            <div>
+              <h2 style="font-size: 1.75em;">Comparison of Attention Mechanisms in Machine Learning Models for Vehicle Routing Problems</h2>
+              <p style="font: size 1.5em;"> Springer - April 2023 </p>
+              <p>Extending on the same lines of the previous publication, this time around we've compared the internal attention mechanisms, made some tweaks and their performance was evaluated.</p>
+            </div>
+            <div>
+              <h2 style="font-size: 1.75em;"><a href="https://link.springer.com/chapter/10.1007/978-981-16-3945-6_77"> Comparison of Machine Learning Algorithms for Vehicle Routing Problems </a></h2>
+              <p style="font: size 1.5em;"> Springer - January 2022 </p>
+              <p>In the last few years, machine learning algorithms have been applied to NP-hard problems such as VRP, TSP with some success. This paper investigates and compares three recent machine learning algorithms: reinforcement learning, the dynamic attention model, and neural large neighborhood search.</p>
+            </div>
           </div>
         </div>
       </section>
-      <!-- /Skills -->
+      <!-- /Publications -->
+      <!-- Projects -->
+      <section id="projects" class="full-height px-lg-5">
+        <tr>
+          <td>
+            <h1><a href="https://sanathkumar123.github.io/personal-website/">Personal Portfolio</a></h1>
+          </td>
+          <p> Languages - HTML, CSS, JS </p>
+          <p> Frameworks - Bootstrap </p>
+        </tr>
+      </section>
+      <!-- /Projects -->
       <!-- Contact -->
       <section id="contact" class="full-height px-lg-5">
         <div class="container">
