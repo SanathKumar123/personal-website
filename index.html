@@ -1,128 +1,539 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sanath's Portfolio</title>
-    <link rel="stylesheet" href="assests/css/index.css">
-    <link rel="stylesheet" href="assests/css/header.css">
-    <link rel="stylesheet" href="assests/css/bootstrap.min.css">
+    <title>Sanath Kumar - Software Engineer from Bangalore</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/aos.css">
+    <link rel="stylesheet" href="./assets/css/line-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body data-bs-spy="scroll" data-bs-target=".navbar">
+
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg bg-light fixed-top">
-        <div class="container">
-          <a class="navbar-brand" href="#">Sanath</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav ms-auto">
-              <a class="nav-link" aria-current="page" href="#home">Home</a>
-              <a class="nav-link" href="#education">Education</a>
-              <a class="nav-link" href="#work">Work</a>
-              <a class="nav-link" href="#publications">Publications</a>
-              <a class="nav-link" href="#projects">Projects</a>
-              <a class="nav-link" href="#contact">Contact</a>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container flex-lg-column">
+            <a class="navbar-brand mx-lg-auto mb-lg-4" href="#">
+                <span class="h3 fw-bold d-block d-lg-none">Sanath Kumar</span>
+                <img src="./assets/images/image.jpg" class="d-none d-lg-block rounded-circle" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#work">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li> -->
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#reviews">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+
+                </ul>
             </div>
-          </div>
         </div>
     </nav>
-    <!-- /NAVBAR -->
-    
-    <!-- CONTENT -->
-    <div class="content-wrapper">
-      <!-- HOME -->
-      <section id="home" class="full-height px-lg-5">
-        <div class="container">
-          <div class="row">
-            <h1 data-aos="fade-up" >I'm a <bold class="home-h1">Software Engineer</bold> from Bangalore, India</h1>
-            <p> Hi Sanath here, I'm a Computer Science Graduate, and I craft high-performing and delightful experiences which are tailored and conversion-focused.</p>
-            <a href="#work" class="link-custom"> Explore My Work </a>
-            <a href="#" class="link-custom"> Call: +91 8885599909 </a>
-          </div>
-        </div>
-        
-      </section>
-      <!-- /HOME -->
-      <!-- Education -->
-      <section id="education" class="full-height">
-        <div class="container-1">
-            <h1 style="color: chartreuse"> EDUCATION </h1>
-            <h2> Amrita Vishwa Vidyapeetham</h2>
-            <p>2018 - 2022</p>
-            <p style="font-size:0.75em">Bachelor of Technology in Computer Science & Engineering.</p>
-            <p style="font-size:0.75em">Related Courses: Design and Analysis of Algorithms, Data Structures, Object-Oriented Programming, Operating Systems, Computer Architecture, Computer Networks.</p>
-        </div>
-      </section>
-      <!-- /Education -->
-      <!-- Work -->
-      <section id="work" class="full-height px-lg-5">
-        <div class="container-2">
-          <div class="row">
-            <h1 style="color: chartreuse; font-size: 3em;"> WORK </h1>
-            <div style="margin: auto;">
-              <h2 style="font-size: 1.75em;"><a href="https://odico.dk/en/"> Odico A/S </a></h2>
-              <p style="font: size 1.5em;"> Software Development Engineer - L1</p>
-              <p style="font: size 1.5em;"> August 2022 - October 2022</p>
-              <p>I redesigned the entire webpage(s) of maker.as (The URL where Odico as a Robotics comes into the picture), which required me to be open, and adaptive (in any role possible).</p>
+    <!-- //NAVBAR -->
+
+    <!-- CONTENT WRAPPER -->
+    <div id="content-wrapper">
+
+        <!-- HOME -->
+        <section id="home" class="full-height px-lg-5">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10">
+                        <h1 class="display-4 fw-bold" data-aos="fade-up">Hi Sanath here, I'm a <span class="text-brand"> Software Development Engineer</span> from Bangalore, India</h1>
+                        <!-- <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="300">I am John Doe, And I craft
+                            high-performing and delightful experiences tailored and conversion-focused</p> -->
+                        <div data-aos="fade-up" data-aos-delay="600">
+                            <a href="#work" class="btn btn-brand me-3">Explore My Work</a>
+                            <a href="#" class="link-custom">Call: (+91) 8885599909</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div>
-              <h2 style="font-size: 1.75em;"><a href="https://www.rakuten.com/"> Rakuten India </a></h2>
-              <p style="font: size 1.5em;"> Software Development Engineer Intern </p>
-              <p style="font: size 1.5em;"> January 2022 - July 2022</p>
-              <p>I developed an Interface (integrated with the back-end too) that can do seamless SQL operations with multi-threading. This particular project of mine helped various teams across Rakuten.</p>
+
+        </section>
+        <!-- //HOME -->
+
+        <!-- SERVICES -->
+        <!-- <section id="services" class="full-height px-lg-5">
+            <div class="container">
+
+                <div class="row pb-4" data-aos="fade-up">
+                    <div class="col-lg-8">
+                        <h6 class="text-brand">SERVICES</h6>
+                        <h1>Services That I Provide</h1>
+                    </div>
+                </div>
+
+                <div class="row gy-4">
+
+                    <div class="col-md-4" data-aos="fade-up">
+                        <div class="service p-4 bg-base rounded-4 shadow-effect">
+                            <div class="iconbox rounded-4">
+                                <i class="las la-feather"></i>
+                            </div>
+                            <h5 class="mt-4 mb-2">UX Design</h5>
+                            <p>I craft high-performing and delightful experiences tailored and conversion-focused</p>
+                            <a href="#" class="link-custom">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="service p-4 bg-base rounded-4 shadow-effect">
+                            <div class="iconbox rounded-4">
+                                <i class="las la-pencil-ruler"></i>
+                            </div>
+                            <h5 class="mt-4 mb-2">Branding</h5>
+                            <p>I craft high-performing and delightful experiences tailored and conversion-focused</p>
+                            <a href="#" class="link-custom">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+                        <div class="service p-4 bg-base rounded-4 shadow-effect">
+                            <div class="iconbox rounded-4">
+                                <i class="las la-laptop-code"></i>
+                            </div>
+                            <h5 class="mt-4 mb-2">Web Designing</h5>
+                            <p>I craft high-performing and delightful experiences tailored and conversion-focused</p>
+                            <a href="#" class="link-custom">Read More</a>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
-          </div>
-        </div>
-      </section>
-      <!-- /Work -->
-      <!-- Publications -->
-      <section id="publications" class="full-height px-lg-5">
-        <div class="container-2">
-          <div class="row">
-            <div>
-              <h2 style="font-size: 1.75em;">Comparison of Attention Mechanisms in Machine Learning Models for Vehicle Routing Problems</h2>
-              <p style="font: size 1.5em;"> Springer - April 2023 </p>
-              <p>Extending on the same lines of the previous publication, this time around we've compared the internal attention mechanisms, made some tweaks and their performance was evaluated.</p>
+        </section> -->
+        <!-- SERVICES -->
+
+        <!-- Education -->
+        <section id="education" class="full-height px-lg-5">
+            <div class="container">
+
+                <div class="row pb-4" data-aos="fade-up">
+                    <div class="col-lg-8">
+                        <h6 class="text-brand">Education</h6>
+                        <!-- <h1>My Education</h1> -->
+                    </div>
+                </div>
+
+                <div class="row gy-5">
+                    <div class="col-lg-6">
+
+                        <!-- <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">Education</h3> -->
+                        <div class="row gy-4">
+
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                                <div class="bg-base p-4 rounded-4 shadow-effect">
+                                    <h4>Bachelor of Technology - Computer Science</h4>
+                                    <p class="text-brand mb-2">Amrita Vishwa Vidyapetham (2018 - 2022)</p>
+                                    <p> Courses: Compiler Design, Object-Oriented Programing, Design and Analysis of Algorithms, Operating Systems, and Computer Networks. </p>
+                                </div>
+                            </div>
+
+                            <!-- <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                                <div class="bg-base p-4 rounded-4 shadow-effect">
+                                    <h4>Master of Software Engineering</h4>
+                                    <p class="text-brand mb-2">De Mars University Venston Bay (2015 - 2020)</p>
+                                    <p class="mb-0">All we are more and design lorem ipsum dolor creativity sit amet consectetur adipisicing elit</p>
+                                </div>
+                            </div>
+
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                                <div class="bg-base p-4 rounded-4 shadow-effect">
+                                    <h4>Master of Software Engineering</h4>
+                                    <p class="text-brand mb-2">De Mars University Venston Bay (2015 - 2020)</p>
+                                    <p class="mb-0">All we are more and design lorem ipsum dolor creativity sit amet consectetur adipisicing elit</p>
+                                </div>
+                            </div> -->
+
+                        </div>
+
+                    </div>
+
+                    <!-- <div class="col-lg-6">
+
+                        <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">Experiance</h3>
+                        <div class="row gy-4">
+
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                                <div class="bg-base p-4 rounded-4 shadow-effect">
+                                    <h4>Applications developer</h4>
+                                    <p class="text-brand mb-2">Twitter (2018 - 2020)</p>
+                                    <p class="mb-0">All we are more and design lorem ipsum dolor creativity sit amet consectetur adipisicing elit</p>
+                                </div>
+                            </div>
+
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                                <div class="bg-base p-4 rounded-4 shadow-effect">
+                                    <h4>Applications developer</h4>
+                                    <p class="text-brand mb-2">Twitter (2018 - 2020)</p>
+                                    <p class="mb-0">All we are more and design lorem ipsum dolor creativity sit amet consectetur adipisicing elit</p>
+                                </div>
+                            </div>
+
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                                <div class="bg-base p-4 rounded-4 shadow-effect">
+                                    <h4>Applications developer</h4>
+                                    <p class="text-brand mb-2">Twitter (2018 - 2020)</p>
+                                    <p class="mb-0">All we are more and design lorem ipsum dolor creativity sit amet consectetur adipisicing elit</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div> -->
+
+                </div>
+
             </div>
-            <div>
-              <h2 style="font-size: 1.75em;"><a href="https://link.springer.com/chapter/10.1007/978-981-16-3945-6_77"> Comparison of Machine Learning Algorithms for Vehicle Routing Problems </a></h2>
-              <p style="font: size 1.5em;"> Springer - January 2022 </p>
-              <p>In the last few years, machine learning algorithms have been applied to NP-hard problems such as VRP, TSP with some success. This paper investigates and compares three recent machine learning algorithms: reinforcement learning, the dynamic attention model, and neural large neighborhood search.</p>
+        </section>
+        <!-- /Education -->
+
+        <!-- Work -->
+        <section id="work" class="full-height px-lg-5">
+            <div class="container">
+
+                <div class="row pb-4" data-aos="fade-up">
+                    <div class="col-lg-8">
+                        <h6 class="text-brand">Work</h6>
+                        <!-- <h1>My Education</h1> -->
+                    </div>
+                </div>
+
+                <div class="row gy-5">
+                    <div class="col-lg-6">
+
+                        <!-- <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">Education</h3> -->
+                        <div class="row gy-4">
+
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                                <div class="bg-base p-4 rounded-4 shadow-effect">
+                                    <h4>Odico A/S</h4>
+                                    <p class="text-brand mb-2">Software Development Engineer - L1</p>
+                                    <p> Courses: Compiler Design, Object-Oriented Programing, Design and Analysis of Algorithms, Operating Systems, and Computer Networks. </p>
+                                </div>
+                            </div>
+
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                                <div class="bg-base p-4 rounded-4 shadow-effect">
+                                    <h4>Rakuten India</h4>
+                                    <p class="text-brand mb-2">Software Development Engineer Intern</p>
+                                    <p class="mb-0">All we are more and design lorem ipsum dolor creativity sit amet consectetur adipisicing elit</p>
+                                </div>
+                            </div>
+
+                            <!-- <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                                <div class="bg-base p-4 rounded-4 shadow-effect">
+                                    <h4>Master of Software Engineering</h4>
+                                    <p class="text-brand mb-2">De Mars University Venston Bay (2015 - 2020)</p>
+                                    <p class="mb-0">All we are more and design lorem ipsum dolor creativity sit amet consectetur adipisicing elit</p>
+                                </div>
+                            </div> -->
+
+                        </div>
+
+                    </div>
+
+                    <!-- <div class="col-lg-6">
+
+                        <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">Experiance</h3>
+                        <div class="row gy-4">
+
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                                <div class="bg-base p-4 rounded-4 shadow-effect">
+                                    <h4>Applications developer</h4>
+                                    <p class="text-brand mb-2">Twitter (2018 - 2020)</p>
+                                    <p class="mb-0">All we are more and design lorem ipsum dolor creativity sit amet consectetur adipisicing elit</p>
+                                </div>
+                            </div>
+
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                                <div class="bg-base p-4 rounded-4 shadow-effect">
+                                    <h4>Applications developer</h4>
+                                    <p class="text-brand mb-2">Twitter (2018 - 2020)</p>
+                                    <p class="mb-0">All we are more and design lorem ipsum dolor creativity sit amet consectetur adipisicing elit</p>
+                                </div>
+                            </div>
+
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                                <div class="bg-base p-4 rounded-4 shadow-effect">
+                                    <h4>Applications developer</h4>
+                                    <p class="text-brand mb-2">Twitter (2018 - 2020)</p>
+                                    <p class="mb-0">All we are more and design lorem ipsum dolor creativity sit amet consectetur adipisicing elit</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div> -->
+
+                </div>
+
             </div>
-          </div>
-        </div>
-      </section>
-      <!-- /Publications -->
-      <!-- Projects -->
-      <section id="projects" class="full-height px-lg-5">
-        <tr>
-          <td>
-            <h1><a href="https://sanathkumar123.github.io/personal-website/">Personal Portfolio</a></h1>
-          </td>
-          <p> Languages - HTML, CSS, JS </p>
-          <p> Frameworks - Bootstrap </p>
-        </tr>
-      </section>
-      <!-- /Projects -->
-      <!-- Contact -->
-      <section id="contact" class="full-height px-lg-5">
-        <div class="container">
-          <div class="row">
-            <h1>I'm a <bold class="home-h1">Software Engineer</bold> from Bangalore, India</h1>
-            <p> I'm Sanath, And I craft high-performing and delightful experiences tailored and conversion-focused</p>
-            <a href="#work" class="btn btn-default"> Explore My Work </a>
-            <a href="#" class="link-custom"> Call: +91 8885599909 </a>
-          </div>
-        </div>
-      </section>
-      <!-- /Contact -->
+        </section>
+        <!-- /Work -->
+
+        <!-- Projects -->
+        <section id="projects" class="full-height px-lg-5">
+            <div class="container">
+
+                <div class="row pb-4" data-aos="fade-up">
+                    <div class="col-lg-8">
+                        <h6 class="text-brand">Projects</h6>
+                        <h1>My Recent Projects</h1>
+                    </div>
+                </div>
+
+                <div class="row gy-4">
+
+                    <div class="col-md-6" data-aos="fade-up">
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="./assets/images/project-1.jpg" alt="">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h4>Personal Portfolio Website</h4>
+                                <p> A fun little project to showcase my education, work, projects, etc. </p>
+                                <p> Technologies used - HTML, CSS, Javascript and Bootstrap framework. </p>
+                                <a href="https://drive.google.com/file/d/1hqxRxw3W44cYFxgOpRDGfJcF91TZiy_m/view?usp=share_link" target="_blank" class="link-custom">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- /Projects -->
+
+        <!-- REVIEWS -->
+        <!-- <section id="reviews" class="full-height px-lg-5">
+            <div class="container">
+
+                <div class="row pb-4" data-aos="fade-up">
+                    <div class="col-lg-8">
+                        <h6 class="text-brand">REVIEWS</h6>
+                        <h1>What our subscribers say</h1>
+                    </div>
+                </div>
+
+                <div class="row gy-4">
+
+                    <div class="col-md-4" data-aos="fade-up">
+
+                        <div class="review shadow-effect bg-base p-4 rounded-4">
+                            <div class="text-brand h5">
+                                <i class="las la-star"></i>
+                                <i class="las la-star"></i>
+                                <i class="las la-star"></i>
+                                <i class="las la-star"></i>
+                                <i class="las la-star"></i>
+                            </div>
+                            <p class="my-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel quae facilis fugiat molestias ab illum excepturi, qui optio modi asperiores, delectus maiores!</p>
+                            <div class="person">
+                                <h5 class="mb-0">Jon Doe</h5>
+                                <p class="mb-0">Twitter</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+
+                        <div class="review shadow-effect bg-base p-4 rounded-4">
+                            <div class="text-brand h5">
+                                <i class="las la-star"></i>
+                                <i class="las la-star"></i>
+                                <i class="las la-star"></i>
+                                <i class="las la-star"></i>
+                                <i class="las la-star"></i>
+                            </div>
+                            <p class="my-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel quae facilis fugiat molestias ab illum excepturi, qui optio modi asperiores, delectus maiores!</p>
+                            <div class="person">
+                                <h5 class="mb-0">Jon Doe</h5>
+                                <p class="mb-0">Twitter</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+
+                        <div class="review shadow-effect bg-base p-4 rounded-4">
+                            <div class="text-brand h5">
+                                <i class="las la-star"></i>
+                                <i class="las la-star"></i>
+                                <i class="las la-star"></i>
+                                <i class="las la-star"></i>
+                                <i class="las la-star"></i>
+                            </div>
+                            <p class="my-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel quae facilis fugiat molestias ab illum excepturi, qui optio modi asperiores, delectus maiores!</p>
+                            <div class="person">
+                                <h5 class="mb-0">Jon Doe</h5>
+                                <p class="mb-0">Twitter</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section> -->
+        <!-- /REVIEWS -->
+
+        <!-- BLOG -->
+        <!-- <section id="blog" class="full-height px-lg-5">
+            <div class="container">
+
+                <div class="row pb-4" data-aos="fade-up">
+                    <div class="col-lg-8">
+                        <h6 class="text-brand">BLOG</h6>
+                        <h1>My BLog Posts</h1>
+                    </div>
+                </div>
+
+                <div class="row gy-4">
+
+                    <div class="col-md-4" data-aos="fade-up">
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="./assets/images/blog-post-1.jpg" alt="">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <p class="text-brand mb-2">20 Dec, 2022</p>
+                                <h5 class="mb-4">Design a creative landing page using Bootstrap 5</h5>
+                                <a href="#" class="link-custom">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="./assets/images/blog-post-2.jpg" alt="">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <p class="text-brand mb-2">20 Dec, 2022</p>
+                                <h5 class="mb-4">Design a creative landing page using Bootstrap 5</h5>
+                                <a href="#" class="link-custom">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="./assets/images/blog-post-3.jpg" alt="">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <p class="text-brand mb-2">20 Dec, 2022</p>
+                                <h5 class="mb-4">Design a creative landing page using Bootstrap 5</h5>
+                                <a href="#" class="link-custom">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section> -->
+        <!-- //BLOG -->
+
+        <!-- CONTACT -->
+        <section id="contact" class="full-height px-lg-5">
+            <div class="container">
+
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-8 pb-4" data-aos="fade-up">
+                        <h6 class="text-brand">CONTACT</h6>
+                        <h1>Interested in working together? Let's talk
+                        </h1>
+                    </div>
+
+                    <div class="col-lg-8" data-aos="fade-up" data-aos-delay="300">
+                        <form action="#" class="row g-lg-3 gy-3">
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control" placeholder="Enter your name">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="email" class="form-control" placeholder="Enter your email">
+                            </div>
+                            <div class="form-group col-12">
+                                <input type="text" class="form-control" placeholder="Enter subject">
+                            </div>
+                            <div class="form-group col-12">
+                                <textarea name="" rows="4" class="form-control" placeholder="Enter your message"></textarea>
+                            </div>
+                            <div class="form-group col-12 d-grid">
+                                <button type="submit" class="btn btn-brand">Contact me</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+        <!-- //CONTACT -->
+
+        <!-- FOOTER -->
+        <footer class="py-5 px-lg-5">
+            <div class="container">
+                <div class="row gy-4 justify-content-between">
+                    <div class="col-auto">
+                        <p class="mb-0">Designed by <a href="#" class="fw-bold">SANATH</a></p>
+                        <p> &#169; Copyright, 2023 </p>
+                    </div>
+                    <div class="col-auto">
+                        <div class="social-icons">
+                            <a href="#"><i class="lab la-linkedin"></i></a>
+                            <a href="#"><i class="lab la-github"></i></a>
+                            <a href="#"><i class="lab la-twitter"></i></a>
+                            <a href="#"><i class="lab la-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- //FOOTER -->
+
     </div>
-    <!-- /CONTENT -->
-    <footer id="main-footer" style="text-align:center">Copyright &copy; 2022, Sanath's Website</footer>
-    <script src="assests/js/bootstrap.bundle.min.js"></script>
-    <script src="assests/js/main.js"></script>
+    <!-- //CONTENT WRAPPER -->
+
+
+
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/aos.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
+
 </html>
